@@ -19,9 +19,9 @@ app.use(cors());
 app.use('/posts', postRoutes);
 app.use("/user", userRouter);
 
-app.get('/',(req,res) => {
-  res.send('Hello and Welcome to Algorithmus API');
-});
+// app.get('/',(req,res) => {
+//   res.send('Hello and Welcome to Algorithmus API');
+// });
 
 const CONNECTION_URL = process.env.MONGO_URL;
 const PORT = process.env.PORT || 5000;
